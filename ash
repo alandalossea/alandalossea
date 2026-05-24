@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بحر الأندلس - الروابط الرسمية</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        :root {
+            --primary-color: #1a4d7c; /* لون أزرق احترافي مستوحى من اللوجو */
+            --bg-color: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px; /* مقاس مثالي للهواتف */
+            background-color: #ffffff;
+            padding: 30px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* تنسيق الشعار (اللوجو) */
+        .logo-section {
+            margin-bottom: 25px;
+        }
+
+        .logo-section img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: contain;
+            border: 2px solid #eee;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .logo-section h1 {
+            color: var(--primary-color);
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* تنسيق أزرار الكتالوج */
+        .catalogs-section {
+            margin-bottom: 30px;
+        }
+
+        .btn-catalog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(26, 77, 124, 0.2);
+        }
+
+        .btn-catalog:hover {
+            background-color: #12385b;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+        }
+
+        /* شبكة التواصل الاجتماعي */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #444;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 15px 10px;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .social-item:hover {
+            background: #f4f6f8;
+            border-color: #ddd;
+        }
+
+        .social-item i {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* الألوان الأصلية للمنصات */
+        .fa-facebook { color: #1877F2; }
+        .fa-whatsapp { color: #25D366; }
+        .fa-youtube { color: #FF0000; }
+        .fa-tiktok { color: #000000; }
+        .fa-envelope { color: #EA4335; }
+        .fa-phone-volume { color: #34B7F1; }
+        .fa-location-dot { color: #DB4437; }
+        .fa-globe { color: #333333; }
+        
+        /* تأثير لون الإنستجرام */
+        .instagram-icon {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .social-item span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* النص التعريفي في الأسفل */
+        .footer-text {
+            font-size: 13px;
+            color: #777;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="logo-section">
+            <img src="YOUR_LOGO_LINK.jpg" alt="لوجو بحر الأندلس">
+            <h1>بحر الأندلس</h1>
+        </header>
+
+        <div class="catalogs-section">
+            <a href="#" target="_blank" class="btn-catalog">
+                <i class="fa-solid fa-book-open"></i>
+                كتالوج المنتجات الأول
+            </a>
+            
+            <a href="#" target="_blank" class="btn-catalog">
+                <i class="fa-solid fa-file-pdf"></i>
+                كتالوج المنتجات الثاني
+            </a>
+        </div>
+
+        <h2 class="section-title">جميع حساباتنا الرسمية</h2>
+
+        <div class="social-grid">
+            
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-instagram instagram-icon"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+
+            <a href="tel:+9640000000000" class="social-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Call</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Location</span>
+            </a>
+
+            <a href="mailto:info@example.com" class="social-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item" style="grid-column: span 2;">
+                <i class="fa-solid fa-globe"></i>
+                <span>Website</span>
+            </a>
+
+        </div>
+
+        <footer class="footer-text">
+            <p>شركة بحر الأندلس لصناعة الكراسي والمفروشات. نلتزم بتقديم أعلى معايير الجودة والراحة لتناسب كافة احتياجاتكم وتجهيزاتكم.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
