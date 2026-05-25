@@ -28,9 +28,9 @@
             color: #333;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* لملء الشاشة من الأعلى */
+            align-items: flex-start;
             min-height: 100vh;
-            padding-top: 0; /* تم إزالة الهامش العلوي لجعل البانر ممتداً */
+            padding-top: 0;
         }
 
         .container {
@@ -40,26 +40,26 @@
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
-            border-radius: 15px; /* حواف منحنية للحاوية */
-            overflow: hidden; /* لمنع الصورة من تخطي الحواف */
+            border-radius: 15px;
+            overflow: hidden;
         }
 
-        /* تنسيق قسم البانر التفصيلي الجديد */
+        /* تنسيق قسم البانر التفصيلي الممتد */
         .logo-banner-section {
             width: 100%;
-            margin-bottom: 20px; /* هامش أسفل البانر */
+            margin-bottom: 20px;
         }
 
         .logo-banner-section img {
-            width: 100%; /* ممتد إلى عرض الحاوية بالكامل */
-            height: auto; /* للحفاظ على التناسب */
+            width: 100%;
+            height: auto;
             display: block;
-            object-fit: cover; /* لضمان ملء المساحة الأفقية دون تشويه */
-            max-height: 250px; /* قيود الارتفاع الجديدة - لا تأخذ جزءاً كبيراً */
-            border-radius: 10px 10px 0 0; /* حواف علوية منحنية فقط */
+            object-fit: cover;
+            max-height: 250px;
+            border-radius: 10px 10px 0 0;
         }
 
-        /* اسم الشركة - يظهر الآن تحت البانر */
+        /* اسم الشركة */
         .company-name {
             color: var(--primary-color);
             font-size: 26px;
@@ -67,7 +67,7 @@
             margin-bottom: 25px;
         }
 
-        /* تنسيق أزرار الكتالوج - ممتدة وعريضة */
+        /* تنسيق أزرار الكتالوج */
         .catalogs-section {
             margin-bottom: 30px;
         }
@@ -87,7 +87,7 @@
             font-weight: 700;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(26, 77, 124, 0.2);
-            width: 100%; /* ممتد على طول الشاشة */
+            width: 100%;
         }
 
         .btn-catalog:hover {
@@ -176,6 +176,7 @@
             border-top: 1px solid #eee;
             padding-top: 25px;
             font-weight: 400;
+            text-align: justify; /* لتنسيق مظهر النص الممتد */
         }
     </style>
 </head>
@@ -253,7 +254,7 @@
         </div>
 
         <footer class="footer-text">
-            <p>شركة بحر الأندلس لصناعة الكراسي والمفروشات. نلتزم بتقديم أعلى معايير الجودة والراحة لتناسب كافة احتياجاتكم وتجهيزاتكم.</p>
+            <p>منذ عام 1996، ونحن نقوم بتصميم وتصنيع وتركيب أنظمة جلوس عالية الجودة، متخصصين في مقاعد القاعات ومقاعد دور السينما ومقاعد الجامعات.</p>
         </footer>
 
     </div>
