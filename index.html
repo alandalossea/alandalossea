@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بحر الأندلس - الروابط الرسمية</title>
+    <title>بحر الأندلس - الروابط الرسمية المعتمدة</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
@@ -13,6 +13,7 @@
         :root {
             --primary-color: #1a4d7c; /* لون أزرق احترافي مستوحى من اللوجو */
             --bg-color: #f8f9fa;
+            --container-width: 480px; /* مقاس مثالي للهواتف */
         }
 
         * {
@@ -27,40 +28,45 @@
             color: #333;
             display: flex;
             justify-content: center;
+            align-items: flex-start; /* لملء الشاشة من الأعلى */
             min-height: 100vh;
+            padding-top: 20px; /* مسافة بسيطة من الأعلى */
         }
 
         .container {
             width: 100%;
-            max-width: 480px; /* مقاس مثالي للهواتف */
+            max-width: var(--container-width);
             background-color: #ffffff;
             padding: 30px 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
+            border-radius: 15px; /* حواف منحنية للحاوية */
         }
 
-        /* تنسيق الشعار (اللوجو) */
-        .logo-section {
-            margin-bottom: 25px;
+        /* تنسيق قسم البانر الجديد الممتد */
+        .logo-banner-section {
+            width: 100%;
+            margin-bottom: 25px; /* هوامش متناسقة مع الأزرار */
+            display: flex;
+            justify-content: center;
         }
 
-        .logo-section img {
-            width: 120px;
-            height: 120px;
-            border-radius: 15px;
-            object-fit: contain;
-            border: 2px solid #eee;
-            padding: 5px;
-            margin-bottom: 10px;
+        .logo-banner-section img {
+            width: 100%; /* ممتد إلى عرض الحاوية بالكامل */
+            height: auto; /* للحفاظ على التناسب */
+            border-radius: 10px; /* حواف منحنية مثل الأزرار */
+            border: none;
+            padding: 0;
+            object-fit: cover; /* لضمان ملء المساحة المستطيلة */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* ظل خفيف */
         }
 
-        .logo-section h1 {
-            color: var(--primary-color);
-            font-size: 24px;
-            font-weight: 700;
+        /* تم إزالة h1 بحر الأندلس ليكون مدمجاً في البانر أو منسقاً بشكل أفضل */
+        .company-name {
+            display: none; /* إخفاء النص ليكون مدمجاً في البانر الجديد */
         }
 
-        /* تنسيق أزرار الكتالوج */
+        /* تنسيق أزرار الكتالوج - ممتدة وعريضة */
         .catalogs-section {
             margin-bottom: 30px;
         }
@@ -69,46 +75,50 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 12px;
-            font-size: 16px;
+            padding: 18px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            font-size: 17px;
             font-weight: 700;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(26, 77, 124, 0.2);
+            width: 100%; /* ممتد على طول الشاشة */
         }
 
         .btn-catalog:hover {
             background-color: #12385b;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(26, 77, 124, 0.3);
         }
 
         .section-title {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 20px;
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 25px;
             position: relative;
+            font-weight: 500;
         }
 
         .section-title::after {
             content: '';
             display: block;
-            width: 50px;
-            height: 2px;
+            width: 60px;
+            height: 3px;
             background-color: var(--primary-color);
-            margin: 10px auto 0;
+            margin: 12px auto 0;
+            border-radius: 2px;
         }
 
         /* شبكة التواصل الاجتماعي */
         .social-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 18px;
+            margin-bottom: 35px;
         }
 
         .social-item {
@@ -120,40 +130,40 @@
             color: #444;
             background: #fdfdfd;
             border: 1px solid #eee;
-            padding: 15px 10px;
-            border-radius: 12px;
+            padding: 20px 10px;
+            border-radius: 15px;
             transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
         }
 
         .social-item:hover {
             background: #f4f6f8;
             border-color: #ddd;
+            transform: translateY(-2px);
         }
 
         .social-item i {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin-bottom: 12px;
         }
 
         /* الألوان الأصلية للمنصات */
-        .fa-facebook { color: #1877F2; }
-        .fa-whatsapp { color: #25D366; }
-        .fa-youtube { color: #FF0000; }
-        .fa-tiktok { color: #000000; }
-        .fa-envelope { color: #EA4335; }
-        .fa-phone-volume { color: #34B7F1; }
-        .fa-location-dot { color: #DB4437; }
-        .fa-globe { color: #333333; }
-        
-        /* تأثير لون الإنستجرام */
-        .instagram-icon {
+        .fa-instagram {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
+        .fa-tiktok { color: #000000; }
+        .fa-phone-volume { color: #34B7F1; }
+        .fa-envelope { color: #EA4335; }
+        .fa-facebook { color: #1877F2; }
+        .fa-whatsapp { color: #25D366; }
+        .fa-youtube { color: #FF0000; }
+        .fa-location-dot { color: #DB4437; }
+        .fa-globe { color: #333333; }
+        
         .social-item span {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
         }
 
@@ -161,9 +171,10 @@
         .footer-text {
             font-size: 13px;
             color: #777;
-            line-height: 1.6;
+            line-height: 1.7;
             border-top: 1px solid #eee;
-            padding-top: 20px;
+            padding-top: 25px;
+            font-weight: 400;
         }
     </style>
 </head>
@@ -171,10 +182,11 @@
 
     <div class="container">
         
-        <header class="logo-section">
-            <img src="logo.jpg" alt="لوجو بحر الأندلس">
-            <h1>بحر الأندلس</h1>
+        <header class="logo-banner-section">
+            <img src="logo-banner.jpg" alt="بانر شركة بحر الأندلس الممتد">
         </header>
+
+        <h1 class="company-name">بحر الأندلس</h1>
 
         <div class="catalogs-section">
             <a href="#" target="_blank" class="btn-catalog">
@@ -188,18 +200,33 @@
             </a>
         </div>
 
-        <h2 class="section-title">جميع حساباتنا الرسمية</h2>
+        <h2 class="section-title">جميع حساباتنا الرسمية المعتمدة</h2>
 
         <div class="social-grid">
             
             <a href="#" target="_blank" class="social-item">
-                <i class="fa-brands fa-facebook"></i>
-                <span>Facebook</span>
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
             </a>
 
             <a href="#" target="_blank" class="social-item">
-                <i class="fa-brands fa-instagram instagram-icon"></i>
-                <span>Instagram</span>
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+
+            <a href="tel:+9640000000000" class="social-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Call</span>
+            </a>
+
+            <a href="mailto:info@example.com" class="social-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-item">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
             </a>
 
             <a href="#" target="_blank" class="social-item">
@@ -208,18 +235,8 @@
             </a>
 
             <a href="#" target="_blank" class="social-item">
-                <i class="fa-brands fa-tiktok"></i>
-                <span>TikTok</span>
-            </a>
-
-            <a href="#" target="_blank" class="social-item">
                 <i class="fa-brands fa-youtube"></i>
                 <span>YouTube</span>
-            </a>
-
-            <a href="tel:+9640000000000" class="social-item">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span>Call</span>
             </a>
 
             <a href="#" target="_blank" class="social-item">
@@ -227,14 +244,9 @@
                 <span>Location</span>
             </a>
 
-            <a href="mailto:info@example.com" class="social-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-
             <a href="#" target="_blank" class="social-item" style="grid-column: span 2;">
                 <i class="fa-solid fa-globe"></i>
-                <span>Website</span>
+                <span>الموقع الإلكتروني الرسمي</span>
             </a>
 
         </div>
