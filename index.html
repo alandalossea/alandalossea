@@ -30,40 +30,41 @@
             justify-content: center;
             align-items: flex-start; /* لملء الشاشة من الأعلى */
             min-height: 100vh;
-            padding-top: 20px; /* مسافة بسيطة من الأعلى */
+            padding-top: 0; /* تم إزالة الهامش العلوي لجعل البانر ممتداً */
         }
 
         .container {
             width: 100%;
             max-width: var(--container-width);
             background-color: #ffffff;
-            padding: 30px 20px;
+            padding: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
             border-radius: 15px; /* حواف منحنية للحاوية */
+            overflow: hidden; /* لمنع الصورة من تخطي الحواف */
         }
 
-        /* تنسيق قسم البانر الجديد الممتد */
+        /* تنسيق قسم البانر التفصيلي الجديد */
         .logo-banner-section {
             width: 100%;
-            margin-bottom: 25px; /* هوامش متناسقة مع الأزرار */
-            display: flex;
-            justify-content: center;
+            margin-bottom: 20px; /* هامش أسفل البانر */
         }
 
         .logo-banner-section img {
             width: 100%; /* ممتد إلى عرض الحاوية بالكامل */
             height: auto; /* للحفاظ على التناسب */
-            border-radius: 10px; /* حواف منحنية مثل الأزرار */
-            border: none;
-            padding: 0;
-            object-fit: cover; /* لضمان ملء المساحة المستطيلة */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* ظل خفيف */
+            display: block;
+            object-fit: cover; /* لضمان ملء المساحة الأفقية دون تشويه */
+            max-height: 250px; /* قيود الارتفاع الجديدة - لا تأخذ جزءاً كبيراً */
+            border-radius: 10px 10px 0 0; /* حواف علوية منحنية فقط */
         }
 
-        /* تم إزالة h1 بحر الأندلس ليكون مدمجاً في البانر أو منسقاً بشكل أفضل */
+        /* اسم الشركة - يظهر الآن تحت البانر */
         .company-name {
-            display: none; /* إخفاء النص ليكون مدمجاً في البانر الجديد */
+            color: var(--primary-color);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 25px;
         }
 
         /* تنسيق أزرار الكتالوج - ممتدة وعريضة */
@@ -183,7 +184,7 @@
     <div class="container">
         
         <header class="logo-banner-section">
-            <img src="logo-banner.jpg" alt="بانر شركة بحر الأندلس الممتد">
+            <img src="detailed-banner.jpg" alt="بانر شركة بحر الأندلس التفصيلي الممتد">
         </header>
 
         <h1 class="company-name">بحر الأندلس</h1>
